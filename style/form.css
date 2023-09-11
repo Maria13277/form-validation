@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Элемент ошибки */
+.error {
+    color: #fb8585;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+/* Блок крестика */
+.close-wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 25px;
+    right: 8px;
+    z-index: 1000;
+
+    width: 20px;
+    height: 20px;
+}
+
+/* Oбщие стили элементов крестика*/
+.close-wrapper__item {
+    width: 15px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+/* Первый элемент крестика */
+.close-wrapper__item:first-child {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+/* Второй элемент крестика */
+.close-wrapper__item:last-child {
+    position: relative;
+    transform: rotate(136deg);
+}
+
+/* Контейнер модального окна */
+.modal-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    background: linear-gradient(rgb(29 46 241),#e72245);
+    z-index: 99999;
+}
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+/* Модальное окно */
+.modal-window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+}
+
+/* Текст модального окна */
+.modal-window__text {
+    font-size: 30px;
+    color: white;
+    font-family: Verdana;
+}
+
+/* Форма */
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    padding: 30px;
+
+    background: linear-gradient(rgb(29 46 241),#e72245);
+    border: 1px solid #450cff;
+}
+
+/* Заголовок формы */
+.form__title {
+    margin: 0px  0px  30px 0px;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana;
+
+    color: white;
+}
+
+/* Элементы формы */
+.form-item {
+    position: relative;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+    color: #e1e1fa;
+}
+
+/* Инпуты элементов формы */
+.form-item__input {
+    width: 100%;
+    height: 30px;
+
+    font-size: 18px;
+    margin-top: 3px;
+    border: none;
+
+    background: none;
+    border-bottom: 1px solid #dcdcdc;
+    color: white;
+}
+
+/* Список элементов формы */
+.form-item-list {
+    width: 100%;
+    height: 30px;
+
+    margin-top: 3px;
+    font-size: 18px;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    color: white;
+}
+
+/* Группа элементов из списка формы */
+.items-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ширина % */
+.width-45 {
+    width: 45%;
+}
+
+/* Контейнер кнопки */
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Кнопка */
+.btn-wrapper__btn {
+    width: 60%;
+    height: 40px;
+
+    margin-top: 30px;
+    border: 2px solid white;
+    font-size: 18px;
+
+    background: none;
+    color: rgb(255, 255, 255);
+}

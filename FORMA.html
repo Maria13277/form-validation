@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+                <div class="modal-wrapper" data-modal="modal" onclick="onCloseModal()">
+                    <div class="modal-window">
+                        <h2 class="modal-window__text"></h2>
+                    </div>
+                </div>
+                <form class="form" onsubmit="onSubmitForm(event)">
+                    <h3 class="form__title">Registration</h3>
+                    <div class="form-item">
+                        <label>First name <br><input type="text" class="form-item__input" data-first-name="firstName"></label>
+                        <p class="error" data-first-name-error="error"></p>
+                        <div class="close-wrapper" data-close-input='close'>
+                            <div class="close-wrapper__item "></div>
+                            <div class="close-wrapper__item"></div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Last name <br> 
+                            <input type="text" class="form-item__input" data-last-name="lastName"></label>
+                        <p class="error" data-last-name-error="error"></p>
+                        <div class="close-wrapper" data-close-input='close'>
+                            <div class="close-wrapper__item"></div>
+                            <div class="close-wrapper__item"></div>
+                        </div>
+                    </div>
+                    <div class="items-group">
+                        <div class="form-item width-45">
+                            <label>Age <br> <input type="number" class="form-item__input" data-age="age"></label>
+                            <p class="error" data-age-error="error"></p>
+                        </div>
+                        <div class="form-item width-45">
+                            <label>Gendar</label>
+                            <select name="gender" class="form-item-list">
+                                <option value="female">female</option>
+                                <option value="male">male</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Email <br> <input type="text" class="form-item__input" data-email="email"></label>
+                        <p class="error" data-email-error="error"></p>
+                        <div class="close-wrapper" data-close-input='close'>
+                            <div class="close-wrapper__item "></div>
+                            <div class="close-wrapper__item"></div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Password <br> <input type="password" class="form-item__input" data-password="password"></label>
+                        <p class="error" data-password-error="error"></p>
+                        <div class="close-wrapper" data-close-input='close'>
+                            <div class="close-wrapper__item "></div>
+                            <div class="close-wrapper__item"></div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Password confirm <br> <input type="password" class="form-item__input" data-password="confPassword"></label>
+                        <p class="error" data-password-confirm-error="error"></p>
+                        <div class="close-wrapper" data-close-input='close'>
+                            <div class="close-wrapper__item "></div>
+                            <div class="close-wrapper__item"></div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn-wrapper__btn" type="submit">Send</button>
+                    </div>
+                </form>
+        </div>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
